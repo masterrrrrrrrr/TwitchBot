@@ -25,6 +25,7 @@ bot.on('message', chatter => {
 
 client.on('message', async message => {
 	if (message.author.bot) return;
+	if (message.channel.name !== 'twitch-chat') return;
 
 	bot.say(`${message.member.user.tag}: ${message.content}`);
 });

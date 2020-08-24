@@ -8,7 +8,7 @@ const client = new Discord.Client();
 const bot = new TwitchBot({
 	username: process.env.username,
 	oauth: process.env.oauth,
-	channels: ['ihadtomakeanewaccount21'],
+	channels: [],
 });
 
 client.login(process.env.token);
